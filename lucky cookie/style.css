@@ -1,0 +1,209 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+  
+body {
+    background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+    font-size: 1.6rem;
+
+    
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+main {
+  background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    border-radius: .5rem;
+}
+  
+.hide {
+  display: none;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #34355B;
+ 
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.secondMain {
+  align-items: center;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: #34355B;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.secondMain p {
+
+    color: #000;
+    text-align: center;
+    font-family: Dancing Script;
+    font-size: 2.4rem;
+    font-weight: 400;
+    width: 27.3rem;
+}
+
+#lucky {
+    background: #E4EDF1;
+
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    padding: 1rem;
+    margin-top: 1.7rem;  
+    margin-bottom: 1.7rem;
+}
+
+
+button {
+    display: flex;
+    padding: 16px;
+    border-radius: .4rem;
+    background: #FF9500;
+    border: none;
+
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 700;
+
+    margin-top: 1.7rem;
+    margin-left: 6.4rem
+}
+
+button:hover {
+    background: #c47609;
+}
+
+#cookieOne:hover {
+	-webkit-animation: cookieOne 0.3s linear infinite both;
+	        animation: cookieOne 0.3s linear infinite both;
+}
+
+@-webkit-keyframes cookieOne {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    40% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes cookieOne {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    40% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+}
+  
+#lucky {
+    -webkit-animation: lucky 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+       animation: lucky 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes lucky {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes lucky {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 1;
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
